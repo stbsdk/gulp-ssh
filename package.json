@@ -12,8 +12,7 @@
         "jsdoc": "jsdoc --destination doc *.js readme.md"
     },
     "dependencies": {
-        "del": "2.*.*",
-        "ssh": "1.*.*",
+        "ssh2": "0.*.*",
         "stb-gulp": "1.*.*"
     },
     "keywords": [

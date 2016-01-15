@@ -37,6 +37,13 @@ var path    = require('path'),
     };
 
 
+// task set was turned off in gulp.js
+if ( !config ) {
+    // do not create tasks
+    return;
+}
+
+
 if ( config.active ) {
     // make sure the default profile is set
     config.defaults = config.defaults || {};

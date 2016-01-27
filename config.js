@@ -15,8 +15,7 @@ var extend = require('extend'),
     config = require('spa-gulp/config');
 
 
-// base config
-// each profile inherits all options from the "default" profile
+// public
 module.exports = extend(true, {}, config, {
     default: {
         host: '',

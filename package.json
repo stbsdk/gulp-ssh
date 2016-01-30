@@ -13,7 +13,7 @@
     },
     "dependencies": {
         "ssh2": "0.*.*",
-        "stb-gulp": "1.*.*"
+        "stb-gulp": "stbsdk/gulp"
     },
     "keywords": [
         "stb",

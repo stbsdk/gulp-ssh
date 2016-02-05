@@ -1,12 +1,12 @@
 {
-    "name": "stb-gulp-ssh",
+    "name": "stb-plugin-ssh",
     "version": "1.3.0",
     "description": "Compile all CommonJS modules into a single JavaScript file.",
     "author": {
         "name": "Stanislav Kalashnik",
         "email": "darkpark.main@gmail.com"
     },
-    "repository": "stbsdk/gulp-ssh",
+    "repository": "stbsdk/plugin-ssh",
     "scripts": {
         "lint": "eslint *.js",
         "jsdoc": "jsdoc --destination doc *.js readme.md"

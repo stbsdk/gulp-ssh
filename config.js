@@ -12,7 +12,7 @@
 'use strict';
 
 var extend = require('extend'),
-    config = require('spa-gulp/config');
+    config = require('spasdk/config');
 
 
 // public

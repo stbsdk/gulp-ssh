@@ -1,6 +1,4 @@
 /**
- * Remote access to the STB device.
- *
  * @author Stanislav Kalashnik <darkpark.main@gmail.com>
  * @license GNU GENERAL PUBLIC LICENSE Version 3
  */

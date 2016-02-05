@@ -1,5 +1,5 @@
 /**
- * Remote STB device connection configuration for ssh gulp task.
+ * Remote STB device connection configuration for ssh tasks.
  *
  * Available template variables:
  *     {host} - client ip where this gulp task is running

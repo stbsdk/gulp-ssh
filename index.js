@@ -12,7 +12,7 @@ var path    = require('path'),
     config  = require(path.join(process.env.PATH_ROOT, process.env.PATH_CFG, 'ssh')),
     appPort = require(path.join(process.env.PATH_ROOT, process.env.PATH_CFG, 'static')).port,
     appHost = require('ip').address(),
-    title   = 'remote  '.inverse.yellow,
+    title   = 'remote  ',
     stderr  = false,
     msgSet  = {
         1   : 'The player reached the end of the media content or detected a discontinuity of the stream.',
@@ -67,7 +67,7 @@ if ( config.active ) {
 
                 // prepare and execute
                 ssh.on('ready', function () {
-                    log(title, 'Connection is ready'.bold);
+                    log(title, 'Connection is ready');
 
                     // substitute template vars
                     profile.exec = profile.exec.replace(/%host%/g, appHost);
@@ -80,10 +80,10 @@ if ( config.active ) {
                         }
 
                         stream.on('exit', function ( code, signal ) {
-                            log('remote  '.bgRed, 'Stream: exit ' + ('(code: ' + code + ', signal: ' + signal + ')').grey);
+                            log('remote  ', 'Stream: exit ' + ('(code: ' + code + ', signal: ' + signal + ')'));
                         });
                         stream.on('close', function () {
-                            log('remote  '.bgRed, 'Stream: close');
+                            log('remote  ', 'Stream: close');
                             ssh.end();
                             done();
                         });
@@ -98,17 +98,17 @@ if ( config.active ) {
                                     } else {
                                         // system/player output
                                         if ( parts[0] === 'Event' ) {
-                                            log(title, line.bgBlue);
+                                            log(title, line);
                                             if ( msgSet[parts[1]] ) {
-                                                log(title, msgSet[parts[1]].grey);
+                                                log(title, msgSet[parts[1]]);
                                             }
                                         } else if ( parts[0] === 'sol' ) {
-                                            log(title, line.bgYellow);
+                                            log(title, line);
                                         } else if ( parts[0] === 'URL' ) {
-                                            log(title, line.yellow);
+                                            log(title, line);
                                         } else {
                                             if ( line === 'STBPlayer Engine Created' || line === 'STBplayer - console-based player using STBengine' ) {
-                                                log(title, line.green);
+                                                log(title, line);
                                             } else {
                                                 log(title, line);
                                             }

@@ -11,7 +11,7 @@ var path    = require('path'),
     SSH2    = require('ssh2'),
     config  = require(path.join(process.env.PATH_ROOT, process.env.PATH_CFG, 'ssh')),
     appPort = require(path.join(process.env.PATH_ROOT, process.env.PATH_CFG, 'static')).port,
-    appHost = require('ip').address(),
+    app     = require('spasdk/lib/app'),
     title   = 'remote  ',
     stderr  = false,
     msgSet  = {
@@ -70,7 +70,7 @@ if ( config.active ) {
                     log(title, 'Connection is ready');
 
                     // substitute template vars
-                    profile.exec = profile.exec.replace(/%host%/g, appHost);
+                    profile.exec = profile.exec.replace(/%host%/g, app.ip);
                     profile.exec = profile.exec.replace(/%port%/g, appPort);
 
                     // run

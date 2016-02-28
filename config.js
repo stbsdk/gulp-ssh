@@ -12,7 +12,7 @@
 'use strict';
 
 var extend = require('extend'),
-    config = require('spasdk/config');
+    config = require('spa-plugin/config');
 
 
 // public

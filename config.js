@@ -61,6 +61,6 @@ module.exports = extend(true, {}, config, {
 
     // extends the default config
     release: {
-        exec: 'killall stbapp; /usr/share/qt-4.6.0/stbapp -qws -display directfb http://%host%:%port%/index.html'
+        exec: 'killall stbapp; /usr/share/qt-4.6.0/stbapp -qws -display directfb http://%host%:%port%/release.html'
     }
 });

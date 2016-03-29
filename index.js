@@ -70,7 +70,7 @@ if ( config.active ) {
                     log(title, 'Connection is ready');
 
                     // substitute template vars
-                    profile.exec = profile.exec.replace(/%host%/g, app.ip);
+                    profile.exec = profile.exec.replace(/%host%/g, app.host);
                     profile.exec = profile.exec.replace(/%port%/g, appPort);
 
                     // run

@@ -33,7 +33,8 @@ profiles.default = extend(true, {}, config.default, {
         status: 'cat /proc/$(pidof stbapp)/status',
         kill: 'killall -9 stbapp',
         clear: 'fbdump -c',
-        test: 'killall stbapp; /test.sh'
+        test: 'killall stbapp; /test.sh',
+        portal: 'killall stbapp; /usr/share/qt-4.6.0/stbapp -qws -display directfb "/home/web/services.html"'
     }
 
     /*// restart device

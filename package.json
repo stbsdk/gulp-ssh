@@ -17,7 +17,7 @@
     "dependencies": {
         "extend": "3.*.*",
         "ssh2": "0.*.*",
-        "spa-plugin": "spasdk/plugin"
+        "spa-plugin-ssh": "spasdk/plugin-ssh"
     },
     "devDependencies": {
         "stb-eslint-config": "stbsdk/eslint-config"

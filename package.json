@@ -11,7 +11,8 @@
         "url": "https://github.com/stbsdk/plugin-ssh.git"
     },
     "scripts": {
-        "lint": "eslint *.js",
+        "lint": "eslint .",
+        "test": "npm run lint",
         "jsdoc": "jsdoc --destination doc *.js readme.md"
     },
     "dependencies": {
@@ -20,6 +21,7 @@
         "spa-plugin-ssh": "spasdk/plugin-ssh"
     },
     "devDependencies": {
+        "eslint": "2.*.*",
         "stb-eslint-config": "stbsdk/eslint-config"
     },
     "keywords": [

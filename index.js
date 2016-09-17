@@ -118,7 +118,8 @@ module.exports = new Plugin({
 //                                         } else if ( parts[0] === 'URL' ) {
 //                                             log(title, line);
 //                                         } else {
-//                                             if ( line === 'STBPlayer Engine Created' || line === 'STBplayer - console-based player using STBengine' ) {
+//                                             if ( line === 'STBPlayer Engine Created' ||
+//                                                  line === 'STBplayer - console-based player using STBengine' ) {
 //                                                 log(title, line);
 //                                             } else {
 //                                                 log(title, line);

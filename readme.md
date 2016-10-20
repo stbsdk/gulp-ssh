@@ -1,9 +1,10 @@
 Execute remote commands on the STB device
 =========================================
 
-[![Build Status](https://img.shields.io/travis/stbsdk/plugin-ssh.svg?style=flat-square)](https://travis-ci.org/stbsdk/plugin-ssh)
-[![NPM version](https://img.shields.io/npm/v/stb-plugin-ssh.svg?style=flat-square)](https://www.npmjs.com/package/stb-plugin-ssh)
-[![Dependencies Status](https://img.shields.io/david/stbsdk/plugin-ssh.svg?style=flat-square)](https://david-dm.org/stbsdk/plugin-ssh)
+[![build status](https://img.shields.io/travis/stbsdk/plugin-ssh.svg?style=flat-square)](https://travis-ci.org/stbsdk/plugin-ssh)
+[![npm version](https://img.shields.io/npm/v/stb-plugin-ssh.svg?style=flat-square)](https://www.npmjs.com/package/stb-plugin-ssh)
+[![dependencies status](https://img.shields.io/david/stbsdk/plugin-ssh.svg?style=flat-square)](https://david-dm.org/stbsdk/plugin-ssh)
+[![devDependencies status](https://img.shields.io/david/dev/stbsdk/plugin-ssh.svg?style=flat-square)](https://david-dm.org/stbsdk/plugin-ssh?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/stbsdk)
 
 
